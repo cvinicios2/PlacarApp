@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="style_bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="label_form" parent="style_bold">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
 </resources>

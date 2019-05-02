@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">PlacarApp</string>
+    <string name="app_name" translatable="false">Placar App</string>
+    <string name="title_clube">Clubs</string>
+    <string name="label_visitante">Home</string>
+    <string name="text_casa">Away</string>
+    <string name="text_nome_casa">Type Home Name</string>
+    <string name="text_nome_visit">Type away name</string>
+    <string name="btncomecar">Start Game</string>
 </resources>

@@ -7,34 +7,36 @@
     tools:context=".ClubesActivity">
 
     <TextView
+        style="@style/label_form"
         android:id="@+id/textView"
         android:layout_width="346dp"
         android:layout_height="21dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:text="TextView"
+        android:text="@string/text_casa"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:text="Time da Casa"
-        tools:textColor="?android:attr/colorActivatedHighlight" />
+        tools:text="@string/text_casa"
+        tools:textColor="@color/colorPrimary" />
 
     <TextView
+        style="@style/label_form"
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="24dp"
-        android:text="TextView"
-        android:textColor="?android:attr/colorActivatedHighlight"
+        android:text="@string/label_visitante"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/inputClubeCasa"
-        tools:text="Time Visitante" />
+        tools:text="@string/label_visitante" />
 
     <EditText
         android:id="@+id/inputClubeCasa"
@@ -43,13 +45,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="Digite o nome do time da casa"
+        android:hint="@string/text_nome_casa"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:textColor="@android:color/holo_blue_dark" />
+        tools:textColor="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/inputClubeVisitante"
@@ -58,13 +60,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="Digite o nome do time visitante"
+        android:hint="@string/text_nome_visit"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:textColor="@android:color/holo_blue_dark" />
+        tools:textColor="@color/colorPrimary" />
 
     <Button
         android:id="@+id/btIniciar"
@@ -73,7 +75,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="56dp"
-        android:text="Começar a Partida"
+        android:text="@string/btncomecar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputClubeVisitante" />
@@ -85,14 +87,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
-        android:textColor="@android:color/holo_red_light"
+        android:text="@string/title_clube"
+        android:textColor="@color/colorPrimary"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="CLUBES" />
+        tools:text="@string/title_clube" />
 
     <TextView
         android:id="@+id/textView4"

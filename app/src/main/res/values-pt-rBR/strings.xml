@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Placar App</string>
+    <string name="title_clube">Clubes</string>
+    <string name="label_visitante">Time Visitante</string>
+    <string name="text_casa">Time da Casa</string>
+    <string name="text_nome_casa">Digite o nome do time da casa</string>
+    <string name="text_nome_visit">Digite o nome do time visitante</string>
+    <string name="btncomecar">Começar a Partida</string>
+</resources>
