@@ -55,6 +55,7 @@
         app:layout_constraintTop_toTopOf="@+id/tvPlacarCasa" />
 
     <Button
+        style="@style/botoes"
         android:id="@+id/btGolCasa"
         android:layout_width="0dp"
         android:layout_height="55dp"
@@ -69,6 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPlacarCasa" />
 
     <Button
+        style="@style/botoes"
         android:id="@+id/btGolVisitante"
         android:layout_width="0dp"
         android:layout_height="55dp"
@@ -79,5 +81,32 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btGolCasa"
         app:layout_constraintTop_toTopOf="@+id/btGolCasa" />
+
+    <Button
+        android:id="@+id/btnZerar"
+        style="@style/botoes"
+        android:layout_width="174dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Zerar Placar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGolVisitante"
+        tools:autoText="false" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:text="Compartilhar no WhatsApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZerar" />
 
 </android.support.constraint.ConstraintLayout>

@@ -21,5 +21,9 @@ class PlacarViewModel: ViewModel(){
         goalHome.value = goalHome.value?.plus(+1)
     }
 
+    fun zerarPlacar(){
+        goalHome.value = 0
+        goalAway.value = 0
+    }
 
 }

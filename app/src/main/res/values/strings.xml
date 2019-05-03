@@ -6,4 +6,6 @@
     <string name="text_nome_casa">Type Home Name</string>
     <string name="text_nome_visit">Type away name</string>
     <string name="btncomecar">Start Game</string>
+
+    <string name="message_to_share">The game between %1$s and %2$s end %3$d to %4$d</string>
 </resources>

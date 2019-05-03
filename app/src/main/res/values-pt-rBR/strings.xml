@@ -7,4 +7,6 @@
     <string name="text_nome_casa">Digite o nome do time da casa</string>
     <string name="text_nome_visit">Digite o nome do time visitante</string>
     <string name="btncomecar">Começar a Partida</string>
+
+    <string name="message_to_share">O jogo entre %1$s e %2$s foi %3$d a %4$d</string>
 </resources>

@@ -16,4 +16,9 @@
         <item name="android:textSize">@dimen/title_size</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
+
+    <style name="botoes">
+        <item name="android:backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
 </resources>
