@@ -1,6 +1,6 @@
 package br.com.fiap.placarapp
 
-import android.app.Activity
+import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -19,20 +19,27 @@ class PlacarActivity : AppCompatActivity() {
 
         placarViewModel = ViewModelProviders.of(this).get(PlacarViewModel::class.java)
 
+        placarViewModel.goalHome.observe(this, Observer{
+            tvPlacarCasa.text = "$it"
+        })
+
+
+        placarViewModel.goalAway.observe(this, Observer{
+            tvPlacarVisitante.text = "$it"
+        })
+
         tvTimeCasa.text = intent.getStringExtra("TIME_CASA")
         tvTimeVisitante.text = intent.getStringExtra("TIME_VISITANTE")
 
-        tvPlacarCasa.text = "${placarViewModel.golCasa}"
-        tvPlacarVisitante.text = "${placarViewModel.golVisitante}"
+        tvPlacarCasa.text = "${placarViewModel.goalHome}"
+        tvPlacarVisitante.text = "${placarViewModel.goalAway}"
 
         btGolCasa.setOnClickListener{
-            placarViewModel.golCasa ++
-            tvPlacarCasa.text = "${placarViewModel.golCasa}"
+            placarViewModel.goalHome()
         }
 
         btGolVisitante.setOnClickListener {
-            placarViewModel.golVisitante ++
-            tvPlacarVisitante.text = "${placarViewModel.golVisitante}"
+            placarViewModel.goalAway()
         }
     }
 }
