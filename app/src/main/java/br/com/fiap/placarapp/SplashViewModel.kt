@@ -13,7 +13,8 @@ class SplashViewModel: ViewModel(){
     }
 
     fun load(){
-        loading.value = false
-        Handler().postDelayed({}, 3000)
+        Handler().postDelayed({
+            loading.value = false
+        }, 3000)
     }
 }
